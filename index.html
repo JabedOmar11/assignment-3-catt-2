@@ -19,6 +19,30 @@
     .poppins {
         font-family: "Poppins", serif;
     }
+    @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+      
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: bounce 1s infinite ease-in-out;
+        }
 </style>
 <script>
     tailwind.config = {
@@ -88,6 +112,7 @@
             
           </div>
         </nav>
+        <div class="animated-box">animate</div>
 
         <!--Text section-->
         
@@ -342,8 +367,6 @@
         
 
 
-
-
       <!--MAIN last Part -->
       <section class="max-w-7xl px-3 py-14  mx-auto mt-40 mb-80">
         <div class="max-w-screen-xl mx-auto px-16">
@@ -397,7 +420,7 @@
 
     <footer>
       <section class="relative ">
-        <div class=" absolute bg-[#EFEBE3] flex justify-around mx-96 rounded-xl -top-44 ">
+        <div class=" absolute bg-[#EFEBE3] flex justify-around mx-96 rounded-xl -top-44 p-10 ">
           
             <div class="  p-1">
               <img src="c2-assets/vegetable-busket.png" alt="">
